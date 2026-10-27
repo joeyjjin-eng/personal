@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Identity Verification Flow — Jin Ahyoung</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site-header">
+<a href="./index.html" style="font-weight:800">JIN AHYOUNG</a>
+<nav style="display:flex;gap:24px;align-items:center">
+<a href="./index.html" class="on">Work</a>
+<a href="./resume.html" class="">Resume</a>
+<a href="mailto:hello@email.com">Email</a>
+<a href="#" target="_blank">LinkedIn</a>
+</nav>
+</header>
+<main>
+<div style="padding:72px 0 42px">
+<h1 style="margin:0;font-size:var(--fs-display);line-height:1.1;font-weight:800;color:#26222B">Identity Verification Flow</h1>
+</div>
+<div class="grid-3" style="gap:24px;padding:20px 0 83px;border-top:1px solid #26222B;font-size:var(--fs-small);line-height:1.5">
+<div style="display:flex;flex-direction:column;gap:4px"><div style="color:#6E6A73">Timeline</div><div style="font-weight:600">2020-02-01 → 2020-06-01</div></div><div style="display:flex;flex-direction:column;gap:4px"><div style="color:#6E6A73">Release</div><div style="font-weight:600">Mobile App</div></div><div style="display:flex;flex-direction:column;gap:4px"><div style="color:#6E6A73">Role</div><div style="font-weight:600">UX Research</div></div>
+</div>
+<div style="padding-bottom:160px">
+<img src="./images/idv-hero.png" alt="Hand holding a phone showing the insurance lookup screen" style="display:block;width:100%;height:auto;margin-bottom:120px">
+<div class="prose" style="font-size:var(--fs-title1);line-height:1.3;color:#26222B;margin-bottom:20px;font-weight:600">Improving the UX of an Unstable Identity Verification Flow</div>
+<div class="prose" style="display:grid;grid-template-columns:minmax(0,11fr) minmax(0,5fr);gap:40px;align-items:center;margin-bottom:40px">
+<p style="margin:0;font-size:var(--fs-subtitle);line-height:1.6;color:#4A4650;text-wrap:pretty">Users often dropped off during identity verification due to failures. We aimed to improve the unstable web scraping system through UX design. This project led to overall improvements in UX writing and interaction. After, verification success reached 83%, and <strong style="color:#26222B">user drop-off fell by 33.5%.</strong></p>
+<img src="./images/idv-dropoff.png" alt="User drop-off fell 33.5% from 20.07 to 20.12" style="display:block;width:100%;height:auto">
+</div>
+<div class="prose grid-3" style="gap:24px;font-size:var(--fs-small);line-height:1.6">
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font-weight:700">Timeline</div><div style="color:#4A4650">2020.02 ~ 2020.06 (4 mos)</div></div>
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font-weight:700">Team</div><div style="color:#4A4650">Project Manager<br>UX Designer<br>Graphic Designer<br>FE Developer<br>BE Developer</div></div>
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font-weight:700">Responsibilities</div><div style="color:#4A4650">UX research 70%, UX Design 100%</div></div>
+</div>
+<div class="cs-section" style="margin-top:120px;padding-top:120px;border-top:1px solid #EAEAEA">
+<div class="cs-block">
+<div class="cs-text"><div class="cs-label">PROBLEMS</div></div>
+<div class="prose" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:40px;align-items:center"><img src="./images/idv-inquiries.png" alt="70% of inquiries"><img src="./images/idv-quotes.png" alt="Customer inquiries about verification errors"></div>
+<div class="cs-text"><h3 class="cs-title">About 70% of customer service inquiries were related to issues during the identity verification process</h3><p>Users frequently encountered problems such as missing security codes, incorrect verification code entries, SMS not received, delayed screen transitions, and timeouts.</p><p>These errors were caused not only by technical instability in the system but also by interface complexity and cognitive friction within the flow.</p></div>
+</div>
+<div class="prose" style="display:grid;grid-template-columns:minmax(0,3fr) minmax(0,5fr);gap:40px;align-items:start">
+<img src="./images/idv-asis-screen.png" alt="As-is sign-up screen">
+<div style="display:flex;flex-direction:column;gap:40px">
+<div class="cs-text"><h3 class="cs-title">Why do these problems occur?</h3><ul>
+<li>Users tap the “Send verification code” button multiple times.</li>
+<li>The flow is not completed in a proper sequence.</li>
+<li>Incorrect information is entered.</li>
+<li>Users skip ahead to the next step.</li>
+<li>Users check their email only to find that the time has expired.</li>
+</ul></div>
+<div class="cs-text"><h3 class="cs-title">There is no such thing as an ideal user.</h3><p>Real users didn’t behave according to the flow I had designed. Their actions varied depending on the situation, emotions, familiarity, and personal tendencies—all of which contributed to unexpected errors throughout the process.</p></div>
+</div>
+</div>
+</div>
+<div class="cs-section" style="margin-top:120px;padding-top:120px;border-top:1px solid #EAEAEA">
+<div class="cs-block">
+<div class="cs-text"><h3 class="cs-title">Creating an Irrational User Model</h3></div>
+<div class="prose grid-2" style="gap:40px;align-items:center">
+<div class="cs-text"><p>On the subway after work, Impatient and anxious, Unfamiliar with the mobile, Skims through, focusing only on large text and icons</p></div>
+<img src="./images/idv-user-model.png" alt="User model: situation, emotion, proficiency, tendency">
+</div>
+</div>
+<div class="cs-block">
+<div class="cs-text"><h3 class="cs-title">How can we solve this from a UX perspective?</h3>
+<ul style="list-style:none;padding:0;gap:8px;margin-top:16px">
+<li style="background:#F4F4F5;border-radius:10px;padding:14px 20px">Tasks are designed to be handled one at a time.</li>
+<li style="background:#F4F4F5;border-radius:10px;padding:14px 20px">Give detailed feedback on what worked, what didn’t, and why.</li>
+<li style="background:#F4F4F5;border-radius:10px;padding:14px 20px">Clearly communicate what needs to be completed.</li>
+<li style="background:#F4F4F5;border-radius:10px;padding:14px 20px">Display only the most important information to prevent overload.</li>
+</ul></div>
+<img src="./images/idv-asis-tobe.png" alt="As-is: unstable system and complex screen. To-be: one task at a time">
+</div>
+</div>
+<div class="cs-section" style="margin-top:120px;padding-top:120px;border-top:1px solid #EAEAEA">
+<div class="cs-block">
+<div class="cs-text"><div class="cs-label">OUTPUT</div></div>
+<img src="./images/idv-output.png" alt="Redesigned verification flow, one step per screen">
+</div>
+</div>
+</div>
+<a href="./insurance-dispute.html" class="hov" style="margin-top:0;padding:40px 0 56px;border-top:1px solid #EAEAEA;display:flex;justify-content:space-between;align-items:center">
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:var(--fs-small);color:#6E6A73">Next</div><div style="font-size:var(--fs-lead);font-weight:700">Insurance Dispute Counseling Service</div></div>
+<div style="font-size:var(--fs-lead)">→</div>
+</a>
+</main>
+</div>
+</body>
+</html>

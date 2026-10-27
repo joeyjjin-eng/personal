@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palette Mood — Jin Ahyoung</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site-header">
+<a href="./index.html" style="font-weight:800">JIN AHYOUNG</a>
+<nav style="display:flex;gap:24px;align-items:center">
+<a href="./index.html" class="on">Work</a>
+<a href="./resume.html" class="">Resume</a>
+<a href="mailto:hello@email.com">Email</a>
+<a href="#" target="_blank">LinkedIn</a>
+</nav>
+</header>
+<main>
+<div style="padding:72px 0 42px">
+<h1 style="margin:0;font-size:var(--fs-display);line-height:1.1;font-weight:800;color:#26222B">Palette Mood</h1>
+</div>
+<div class="grid-3" style="gap:24px;padding:20px 0 83px;border-top:1px solid #26222B;font-size:var(--fs-small);line-height:1.5">
+<div style="display:flex;flex-direction:column;gap:4px"><div style="color:#6E6A73">Timeline</div><div style="font-weight:600">2025-08-01 → 2025-08-14</div></div><div style="display:flex;flex-direction:column;gap:4px"><div style="color:#6E6A73">Release</div><div style="font-weight:600">Web</div></div><div style="display:flex;flex-direction:column;gap:4px"><div style="color:#6E6A73">Role</div><div style="font-weight:600">Product design</div></div>
+</div>
+<div style="padding-bottom:160px">
+<div class="prose" style="font-size:var(--fs-title1);line-height:1.3;color:#26222B;margin-bottom:20px;font-weight:600">Not just pink, but faded pink</div>
+<p class="prose" style="margin-top:0;margin-bottom:16px;font-size:var(--fs-subtitle);line-height:1.6;color:#4A4650;text-wrap:pretty">Palette Mood started from a simple question: what if colors had names that matched the mood they carry? Instead of “Pink,” it might use “Faded Pink” to convey a mood or story.</p>
+<p class="prose" style="margin-top:0;margin-bottom:40px;font-size:var(--fs-small)"><a href="https://palettemood.vercel.app/" target="_blank" class="hov" style="text-decoration:underline">palettemood.vercel.app ↗</a></p>
+<img src="./images/palette-hero.png" alt="Scrunchies in six colors, one labeled Faded Pink" style="display:block;width:100%;height:auto">
+<div class="cs-section" style="padding-top:120px">
+<div class="cs-block">
+<div class="cs-text"><p>Palette Mood is a personal project created using Google AI Studio.</p><p>This idea was conceived with individuals and businesses in mind—such as fashion brands, artists, and designers—who want to convey color through emotion and atmosphere. Palette Mood translates the colors of an image into the language of emotion, including everything from fashion items like clothing and accessories to the atmosphere of furniture and interior design.</p><p>My goal is to help color transcend its role as a simple visual element, enabling it to become a medium that truly communicates a brand’s feeling and atmosphere.</p></div>
+<img src="./images/palette-app.png" alt="Palette Mood result with primary colors">
+</div>
+<div class="cs-text"><div class="cs-label">TOOLS</div><p>Google AI Studio, Gemini, Firebase, Google Cloud Console, Cursor, Visual Studio Code, GitHub, Vercel</p></div>
+</div>
+<div class="cs-section" style="margin-top:120px;padding-top:120px;border-top:1px solid #EAEAEA">
+<div class="cs-block">
+<div class="cs-text"><div class="cs-subtitle">1st Iteration</div><p>The Product Requirements Document (PRD) was written using Gemini, and the content was directly built into Google AI Studio.</p><p>The core function—uploading an image and assigning an emotional name combined with an adjective and a noun (e.g., ‘Faded Pink’)—has been prototyped.</p></div>
+<img src="./images/palette-iteration-1.png" alt="First prototype in Google AI Studio">
+</div>
+<div class="cs-block">
+<div class="cs-text"><div class="cs-subtitle">2nd Iteration</div><p>The number of results was set to 10, with colors categorized into dominant (5), secondary (3), and minor (2) based on area. The Gemini model was fine-tuned to improve the quality of generated color names.</p><p>A login feature was implemented using Firebase and Google Cloud Console, enabling Google Sign-In and saving users’ extracted color history.</p></div>
+<img src="./images/palette-iteration-2.png" alt="Primary, secondary and accent colors with history" style="max-width:710px;margin:0 auto">
+</div>
+<div class="cs-text"><div class="cs-subtitle">3rd Iteration</div><p>The visual design was refined. I started the design through prompting with Cursor, applying design elements like Dark Theme and Glassmorphism.</p><p>A history policy was added. This policy was set to store records for a maximum of 3 days (72 hours) and limit extractions to 10 per user per day.</p></div>
+</div>
+<div class="cs-section" style="margin-top:120px;padding-top:120px;border-top:1px solid #EAEAEA">
+<div class="cs-block">
+<div class="cs-text"><h3 class="cs-title">Final Outcome</h3><p>Detailed color codes, as well as specific border, padding, margin, and icons were fine-tuned using Visual Studio Code. The project was pushed to GitHub and finally deployed via Vercel.</p></div>
+<div class="cs-section">
+<div class="cs-block">
+<div class="cs-text"><div class="cs-subtitle">Image Extraction Results</div></div>
+<img src="./images/palette-result.png" alt="Extracted palette with history" style="max-width:560px;margin:0 auto">
+</div>
+<div class="cs-block">
+<div class="cs-text"><div class="cs-subtitle">Image Upload Screen</div></div>
+<img src="./images/palette-upload.png" alt="Image upload screen">
+</div>
+<div class="cs-block">
+<div class="cs-text"><div class="cs-subtitle">Image Analysis in Progress</div></div>
+<img src="./images/palette-analyzing.png" alt="Image analysis in progress">
+</div>
+<div class="cs-block">
+<div class="cs-text"><div class="cs-subtitle">Result - Copy Color Code</div></div>
+<img src="./images/palette-copy.png" alt="Copying a color code from the result">
+</div>
+</div>
+</div>
+</div>
+<div class="cs-section" style="margin-top:120px;padding-top:120px;border-top:1px solid #EAEAEA">
+<div class="cs-text"><h3 class="cs-title">Insights</h3><ul>
+<li>Describing designs through prompts pushed me to think more concretely about UX — clarifying intentions I might have otherwise left vague.</li>
+<li>Sharing your intent, purpose, and context upfront leads to more accurate and relevant results from the AI.</li>
+<li>Drafts come together quickly and the overall concept feels satisfying, but fine-tuning the details still requires manual work — and some basic knowledge of code and developer terminology.</li>
+<li>Working with AI made me realize how much my developer colleagues had quietly handled behind the scenes — things I never even noticed until I had to do them myself.</li>
+</ul></div>
+</div>
+</div>
+<a href="./weplat.html" class="hov" style="margin-top:0;padding:40px 0 56px;border-top:1px solid #EAEAEA;display:flex;justify-content:space-between;align-items:center">
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:var(--fs-small);color:#6E6A73">Next</div><div style="font-size:var(--fs-lead);font-weight:700">Weplat — Integrated Insurance Platform</div></div>
+<div style="font-size:var(--fs-lead)">→</div>
+</a>
+</main>
+</div>
+</body>
+</html>

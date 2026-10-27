@@ -1,0 +1,59 @@
+/* Jin Ahyoung portfolio — Centered detail, left-aligned work list */
+@font-face{font-family:'Pretendard';src:url('./fonts/Pretendard-400.otf') format('opentype');font-weight:400}
+@font-face{font-family:'Pretendard';src:url('./fonts/Pretendard-500.otf') format('opentype');font-weight:500}
+@font-face{font-family:'Pretendard';src:url('./fonts/Pretendard-700.otf') format('opentype');font-weight:700}
+@font-face{font-family:'Pretendard';src:url('./fonts/Pretendard-800.otf') format('opentype');font-weight:800}
+:root{
+  /* Type scale */
+  --fs-display:72px;--fs-title1:32px;--fs-title2:28px;--fs-lead:22px;
+  --fs-subtitle:18px;--fs-body:17px;--fs-small:14px;--fs-label:13px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#FFFFFF;color:#26222B;font-family:'Pretendard',-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#26222B;text-decoration:none}
+a:hover{color:#6E6A73}
+img{max-width:100%}
+.hov{transition:opacity .15s}
+.hov:hover{opacity:.65;color:inherit}
+
+.wrap{max-width:1040px;margin:0 auto;padding:0 40px}
+.site-header{padding:48px 0;display:flex;justify-content:space-between;align-items:center;font-size:var(--fs-small)}
+.site-header nav a{color:#6E6A73}
+.site-header nav a.on{color:#26222B}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:64px}
+.prose{width:100%;max-width:680px;margin-left:auto;margin-right:auto}
+
+/* Case study: text column 680 centered, images full width. Spacing: block→block 120, text→image 40, image→image 24, paragraph→paragraph 16, label→title 20, title→body 32 */
+.cs-section{display:flex;flex-direction:column;gap:120px}
+.cs-block{display:flex;flex-direction:column;gap:40px}
+.cs-images{display:flex;flex-direction:column;gap:24px}
+.cs-text{display:flex;flex-direction:column;gap:16px;width:100%;max-width:680px;margin:0 auto}
+.cs-label{font-size:var(--fs-label);font-weight:800;color:#8F8B94;margin-bottom:4px}
+.cs-title{margin:0;font-size:var(--fs-title2);line-height:1.35;font-weight:700;text-wrap:pretty}
+.cs-subtitle{margin:0;font-size:var(--fs-subtitle);font-weight:700}
+.cs-text p{margin:0;font-size:var(--fs-body);line-height:1.7;color:#4A4650;text-wrap:pretty}
+.cs-text ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:12px;font-size:var(--fs-body);line-height:1.7;color:#4A4650}
+.cs-text .cs-title+p,.cs-text .cs-subtitle+p,.cs-text .cs-title+ul{margin-top:16px}
+.cs-figure{margin:0;display:flex;flex-direction:column;gap:12px}
+.cs-figure figcaption{font-size:var(--fs-label);color:#6E6A73;text-align:center}
+.cs-section img{display:block;width:100%;height:auto}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+
+.work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-flow:row dense;gap:48px 24px}
+.card{display:flex;flex-direction:column;gap:14px}
+.card-large{grid-column:span 2;grid-row:span 2}
+.thumb{aspect-ratio:16/10;background:#F4F4F5;overflow:hidden}
+.thumb img{display:block;width:100%;height:100%;object-fit:cover}
+
+.resume-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:64px}
+
+@media (max-width:760px){
+  .wrap{padding:0 20px}
+  .grid-3,.resume-grid,.split{grid-template-columns:minmax(0,1fr)}
+  .split{gap:32px}
+  .work-grid{grid-template-columns:minmax(0,1fr)}
+  .card-large{grid-column:auto;grid-row:auto}
+  :root{--fs-display:48px}
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart BOBI — Jin Ahyoung</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site-header">
+<a href="./index.html" style="font-weight:800">JIN AHYOUNG</a>
+<nav style="display:flex;gap:24px;align-items:center">
+<a href="./index.html" class="on">Work</a>
+<a href="./resume.html" class="">Resume</a>
+<a href="mailto:hello@email.com">Email</a>
+<a href="#" target="_blank">LinkedIn</a>
+</nav>
+</header>
+<main>
+<div style="padding:72px 0 42px">
+<h1 style="margin:0;font-size:var(--fs-display);line-height:1.1;font-weight:800;color:#26222B">Smart BOBI</h1>
+</div>
+<div class="grid-3" style="gap:24px;padding:20px 0 83px;border-top:1px solid #26222B;font-size:var(--fs-small);line-height:1.5">
+<div style="display:flex;flex-direction:column;gap:4px"><div style="color:#6E6A73">Timeline</div><div style="font-weight:600">2026-02-01 → 2026-08-31</div></div><div style="display:flex;flex-direction:column;gap:4px"><div style="color:#6E6A73">Release</div><div style="font-weight:600">Web</div></div><div style="display:flex;flex-direction:column;gap:4px"><div style="color:#6E6A73">Role</div><div style="font-weight:600">Product design, UX Research, prototyping</div></div>
+</div>
+<div style="padding-bottom:160px">
+<div class="prose" style="font-size:var(--fs-title1);line-height:1.3;color:#26222B;margin-bottom:20px;font-weight:600">AI-powered Insurance Underwriting Service</div>
+<p class="prose" style="margin-top:0;margin-bottom:40px;font-size:var(--fs-subtitle);line-height:1.6;color:#4A4650;text-wrap:pretty">AI-powered service that identifies insurance products available for a customer based on their medical history.</p>
+<img src="./images/smart-bobi-desktop.png" alt="Smart BOBI results on desktop" style="display:block;width:100%;height:auto">
+<div class="cs-section" style="padding-top:120px">
+<div class="cs-block">
+<div class="cs-text"><h3 class="cs-title">How can we reduce AI processing time and costs?</h3><p>Insurance policies varied in length and underwriting criteria. Analyzing full policy documents increased processing time and costs. We needed to limit the information AI processed to offer the service at an affordable price.</p></div>
+<figure class="cs-figure"><img src="./images/smart-bobi-refining.png" alt="Refining Information for AI" style="max-width:480px;margin:0 auto"><figcaption>Refining Information for AI</figcaption></figure>
+</div>
+<div class="cs-block">
+<div class="cs-text"><h3 class="cs-title">Structured Information to Narrow AI Analysis</h3><p>I mapped natural-language diagnoses to standardized disease names and codes. I filtered relevant medical information and extracted key underwriting criteria from each insurer’s guidelines.</p><p>These criteria were structured into four variables: diagnosis, treatment duration, hospital stay, and surgery status. AI could then make decisions based on structured data rather than analyzing full documents from scratch.</p></div>
+<figure class="cs-figure"><img src="./images/smart-bobi-structuring.png" alt="Structuring the AI" style="max-width:480px;margin:0 auto"><figcaption>Structuring the AI</figcaption></figure>
+</div>
+<div class="cs-text"><h3 class="cs-title">Delivered Results in Under 30 Seconds</h3><p>By narrowing the scope of analysis, we reduced processing time and designed a cost-efficient service to support affordable pricing.</p></div>
+</div>
+<div class="cs-section" style="margin-top:120px;padding-top:120px;border-top:1px solid #EAEAEA">
+<div class="cs-text"><div class="cs-label">DESIGNING THE AI INTERACTION</div><h3 class="cs-title">How can we convey the AI analysis experience through a simple input-and-results flow?</h3><p>Since AI cannot reliably interpret every natural-language input, I defined four key variables for underwriting decisions: diagnosis, treatment duration, length of hospitalization, and surgery status. I guided users with predefined options and input ranges to ensure all required information was provided accurately.</p><p>I designed the experience to feel interactive, even within a simple input-and-results flow. Conversational UX writing and step-by-step interactions created a natural flow during input, while clear explanations of the analysis results delivered a smarter AI service experience.</p></div>
+<div class="cs-block">
+<div class="cs-text"><h3 class="cs-title">Adapting the UI to Each Device’s Context</h3></div>
+<div class="cs-section">
+<div class="cs-block">
+<div class="cs-text"><div class="cs-subtitle">Mobile</div><p>I used a chatbot-style UI to guide users through a linear input flow. A progress indicator helped users track their current step, while a summary of previous inputs allowed them to review and edit their information.</p></div>
+<div class="grid-2" style="gap:24px"><img src="./images/smart-bobi-mobile-chat.png" alt="Mobile input flow"><img src="./images/smart-bobi-mobile-result.png" alt="Mobile results"></div>
+</div>
+<div class="cs-block">
+<div class="cs-text"><div class="cs-subtitle">Desktop</div><p>I placed the input form and analysis results side by side. This allowed users to review and edit their inputs while viewing the results, with the overall information structure visible at a glance.</p></div>
+<img src="./images/smart-bobi-desktop-flow.png" alt="Desktop input and analysis states">
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="./insurance-assistant.html" class="hov" style="margin-top:0;padding:40px 0 56px;border-top:1px solid #EAEAEA;display:flex;justify-content:space-between;align-items:center">
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:var(--fs-small);color:#6E6A73">Next</div><div style="font-size:var(--fs-lead);font-weight:700">Bobi, Your Insurance Assistant</div></div>
+<div style="font-size:var(--fs-lead)">→</div>
+</a>
+</main>
+</div>
+</body>
+</html>
