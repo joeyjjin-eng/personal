@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Jin Ahyoung</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site-header">
+<a href="./index.html" style="font-weight:800">JIN AHYOUNG</a>
+<nav style="display:flex;gap:24px;align-items:center">
+<a href="./index.html" class="">Work</a>
+<a href="./resume.html" class="">Resume</a>
+<a href="./contact.html" class="on">Contact</a>
+</nav>
+</header>
+<main style="padding:100px 0 140px;display:flex;flex-direction:column;gap:72px">
+<h1 style="margin:0;font-size:var(--fs-display);line-height:1.1;font-weight:800">Contact</h1>
+<div style="display:flex;flex-direction:column;gap:0">
+<div style="display:flex;flex-direction:column;gap:6px;padding:24px 0;border-top:1px solid #EAEAEA">
+<div style="font-size:var(--fs-small);color:#6E6A73">Email</div>
+<div style="display:flex;align-items:center;gap:16px">
+<span style="font-size:var(--fs-body);font-weight:600">joeyjjin@gmail.com</span>
+<button onclick="navigator.clipboard.writeText('joeyjjin@gmail.com').then(()=>{const t=this.nextElementSibling;t.style.opacity='1';setTimeout(()=>t.style.opacity='0',1500)})" style="background:none;border:none;padding:0;cursor:pointer;color:#6E6A73;display:flex;align-items:center" title="Copy email"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+<span style="font-size:var(--fs-small);color:#6E6A73;opacity:0;transition:opacity .2s">Copied!</span>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:24px 0;border-top:1px solid #EAEAEA">
+<div style="font-size:var(--fs-small);color:#6E6A73">LinkedIn</div>
+<a href="https://www.linkedin.com/in/ahyoung-jin-941622125" target="_blank" style="font-size:var(--fs-body);font-weight:600" class="hov">linkedin.com/in/ahyoung-jin-941622125 ↗</a>
+</div>
+</div>
+</main>
+<footer style="padding:40px 0 56px;border-top:1px solid #EAEAEA;display:flex;justify-content:space-between;font-size:var(--fs-small);color:#6E6A73"><span>© 2026 Jin Ahyoung</span><span>joeyjjin@gmail.com</span></footer>
+</div>
+</body>
+</html>

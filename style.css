@@ -49,6 +49,12 @@ img{max-width:100%}
 
 .resume-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:64px}
 
+.contact-wrap{position:relative}
+.contact-wrap:hover .contact-drop{display:flex}
+.contact-drop{display:none;position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid #EAEAEA;border-radius:8px;padding:6px;flex-direction:column;gap:2px;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,0.08);z-index:10}
+.contact-drop a{font-size:var(--fs-small);color:#26222B;padding:6px 12px;border-radius:6px}
+.contact-drop a:hover{background:#F4F4F5;color:#26222B}
+
 @media (max-width:760px){
   .wrap{padding:0 20px}
   .grid-3,.resume-grid,.split{grid-template-columns:minmax(0,1fr)}

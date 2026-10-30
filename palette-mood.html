@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -13,8 +13,7 @@
 <nav style="display:flex;gap:24px;align-items:center">
 <a href="./index.html" class="on">Work</a>
 <a href="./resume.html" class="">Resume</a>
-<a href="mailto:hello@email.com">Email</a>
-<a href="#" target="_blank">LinkedIn</a>
+<a href="./contact.html" class="">Contact</a>
 </nav>
 </header>
 <main>
@@ -28,7 +27,9 @@
 <div class="prose" style="font-size:var(--fs-title1);line-height:1.3;color:#26222B;margin-bottom:20px;font-weight:600">Not just pink, but faded pink</div>
 <p class="prose" style="margin-top:0;margin-bottom:16px;font-size:var(--fs-subtitle);line-height:1.6;color:#4A4650;text-wrap:pretty">Palette Mood started from a simple question: what if colors had names that matched the mood they carry? Instead of “Pink,” it might use “Faded Pink” to convey a mood or story.</p>
 <p class="prose" style="margin-top:0;margin-bottom:40px;font-size:var(--fs-small)"><a href="https://palettemood.vercel.app/" target="_blank" class="hov" style="text-decoration:underline">palettemood.vercel.app ↗</a></p>
-<img src="./images/palette-hero.png" alt="Scrunchies in six colors, one labeled Faded Pink" style="display:block;width:100%;height:auto">
+<div style="width:100%;aspect-ratio:16/9;overflow:hidden">
+  <img src="./images/palette-hero.png" alt="Scrunchies in six colors, one labeled Faded Pink" style="display:block;width:100%;height:100%;object-fit:cover;object-position:center 38%">
+</div>
 <div class="cs-section" style="padding-top:120px">
 <div class="cs-block">
 <div class="cs-text"><p>Palette Mood is a personal project created using Google AI Studio.</p><p>This idea was conceived with individuals and businesses in mind—such as fashion brands, artists, and designers—who want to convey color through emotion and atmosphere. Palette Mood translates the colors of an image into the language of emotion, including everything from fashion items like clothing and accessories to the atmosphere of furniture and interior design.</p><p>My goal is to help color transcend its role as a simple visual element, enabling it to become a medium that truly communicates a brand’s feeling and atmosphere.</p></div>
@@ -36,16 +37,22 @@
 </div>
 <div class="cs-text"><div class="cs-label">TOOLS</div><p>Google AI Studio, Gemini, Firebase, Google Cloud Console, Cursor, Visual Studio Code, GitHub, Vercel</p></div>
 </div>
-<div class="cs-section" style="margin-top:120px;padding-top:120px;border-top:1px solid #EAEAEA">
-<div class="cs-block">
-<div class="cs-text"><div class="cs-subtitle">1st Iteration</div><p>The Product Requirements Document (PRD) was written using Gemini, and the content was directly built into Google AI Studio.</p><p>The core function—uploading an image and assigning an emotional name combined with an adjective and a noun (e.g., ‘Faded Pink’)—has been prototyped.</p></div>
+<div class="cs-section" style="margin-top:120px">
 <img src="./images/palette-iteration-1.png" alt="First prototype in Google AI Studio">
+<div style="display:flex;flex-direction:column">
+<div style="display:grid;grid-template-columns:160px 1fr;gap:40px;padding:24px 0;border-top:1px solid #EAEAEA">
+<div class="cs-subtitle">1st Iteration</div>
+<div class="cs-text" style="margin:0;max-width:none"><p>The Product Requirements Document (PRD) was written using Gemini, and the content was directly built into Google AI Studio.</p><p>The core function—uploading an image and assigning an emotional name combined with an adjective and a noun (e.g., ‘Faded Pink’)—has been prototyped.</p></div>
 </div>
-<div class="cs-block">
-<div class="cs-text"><div class="cs-subtitle">2nd Iteration</div><p>The number of results was set to 10, with colors categorized into dominant (5), secondary (3), and minor (2) based on area. The Gemini model was fine-tuned to improve the quality of generated color names.</p><p>A login feature was implemented using Firebase and Google Cloud Console, enabling Google Sign-In and saving users’ extracted color history.</p></div>
-<img src="./images/palette-iteration-2.png" alt="Primary, secondary and accent colors with history" style="max-width:710px;margin:0 auto">
+<div style="display:grid;grid-template-columns:160px 1fr;gap:40px;padding:24px 0;border-top:1px solid #EAEAEA">
+<div class="cs-subtitle">2nd Iteration</div>
+<div class="cs-text" style="margin:0;max-width:none"><p>The number of results was set to 10, with colors categorized into dominant (5), secondary (3), and minor (2) based on area. The Gemini model was fine-tuned to improve the quality of generated color names.</p><p>A login feature was implemented using Firebase and Google Cloud Console, enabling Google Sign-In and saving users’ extracted color history.</p></div>
 </div>
+</div>
+<div style="display:flex;flex-direction:column;gap:40px">
+<img src="./images/palette-iteration-2.png" alt="Dark theme iteration">
 <div class="cs-text"><div class="cs-subtitle">3rd Iteration</div><p>The visual design was refined. I started the design through prompting with Cursor, applying design elements like Dark Theme and Glassmorphism.</p><p>A history policy was added. This policy was set to store records for a maximum of 3 days (72 hours) and limit extractions to 10 per user per day.</p></div>
+</div>
 </div>
 <div class="cs-section" style="margin-top:120px;padding-top:120px;border-top:1px solid #EAEAEA">
 <div class="cs-block">
